@@ -1,0 +1,21 @@
+---
+name: localcloud
+description: python dev environ
+keywords: ''
+type: Default
+documentation: ''
+images:
+- name: gfranxman_python
+  source: gfranxman/python:latest
+  type: Default
+  links:
+  - service: redis
+    alias: redis
+  - service: dockerfile_elasticsearch
+    alias: elasticsearch
+- name: redis
+  source: redis:latest
+  type: Default
+- name: dockerfile_elasticsearch
+  source: dockerfile/elasticsearch:latest
+  type: Default
